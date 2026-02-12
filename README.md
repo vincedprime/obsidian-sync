@@ -76,3 +76,5 @@ fi
 `crontab -e` Once the file is opened add this
 `0 12 * * * /Users/yourname/obsidian-daily-sync.sh` - This is cron so you can setup how frequently you want to push. This is everyday at 12pm.
 Once done exit `:wq`
+
+My sync - https://github.com/vincedprime/brain-dump

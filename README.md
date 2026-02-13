@@ -37,6 +37,13 @@ git config user.name "your-username"
 
 log_message "Git config set successfully"
 
+log_message "Pulling latest changes from remote..."
+if git pull --rebase origin main 2>&1 >> "$LOG_FILE"; then
+    log_message "Successfully pulled latest changes"
+else
+    log_message "WARNING: Pull failed or had conflicts, attempting to continue..."
+fi
+
 git add . || {
     log_message "ERROR: Failed to add changes to git"
     exit 1

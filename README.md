@@ -1,5 +1,5 @@
-# obsidian-sync
-Sync your obsidian notes for free
+# automatic-obsidian-backup
+Sync your obsidian notes for free via git
 
 1. Create a git repo. Clone in local. Go to obsidian and make that project folder path as you vault location.
 2. Create a bash script
